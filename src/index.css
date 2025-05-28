@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.netflix-logo {
+  color: #e50914;
+  letter-spacing: 0.1em;
+  transform: rotateX(30deg) scaleY(1.5);
+  transform-origin: bottom center;
+}
+
+.test{
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+}
+
+img.profile {
+    display: block;
+    width: 300px;
+    aspect-ratio: calc(2 / 3);
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+section.facts p {
+  box-sizing: border-box;
+}
+
+div.column p {
+  margin: 0 0 20px;
+  font-size: 1em;
+}
+
+div.column p strong {
+  display: block;
+  font-weight: 600;
+}
+
+
+.firstgroud {
+    border-bottom: 1px solid var(--primaryColor);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ol.people {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+}
+
+ol.people li{
+  min-width: 140px;
+  text-align: left;
+  margin-right: 0;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+ol.people li:nth-child(n+4) p:first-child {
+  padding-top: 20px;
+}
